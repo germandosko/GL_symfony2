@@ -1,0 +1,37 @@
+{% extends "::base.html.twig" %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('bundles/acmegraphic/css/feature-carousel.css') }}" type="text/css">
+{% endblock stylesheets%}
+
+{% block javascripts %}
+<script type="text/javascript" src="{{ asset('bundles/acmegraphic/js/libs/jquery-1.7.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/acmegraphic/js/libs/jquery-ui-1.10.1.custom.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/acmegraphic/js/libs/jquery.featureCarousel.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/acmegraphic/js/libs/carousel_ready.js') }}"></script>
+{% endblock javascripts%}
+
+{% block change %}
+	<div>
+		<h2 class="title_company">Quienes Somos?</h2>
+		<p class="description_company">Somos un grupo de jovenes profesionales dedicados a brindar a nuestros clientes soluciones efectivas en el &aacute;rea de la comunicaci&oacute;n y el dise&ntilde;o. Conformamos un equipo de trabajo responsable en el manejo de nuestras tareas y nos comprometemos con los requerimientos de nuestros clientes, trabajando en conjunto para poder brindarles soluciones gr&aacute;ficas de alto impacto.</p>		
+	</div>
+	<a id="but_prev" href="#">PREV</a> | <a id="but_pause" href="#">PAUSE</a> | <a id="but_start" href="#">START</a> | <a id="but_next" href="#">NEXT</a> 
+	<div class="carousel-container">
+		<div id="carousel">
+			<div class="carousel-feature">
+				<a href="#"><img class="carousel-image" alt="Image Caption" src="{{ asset('bundles/acmegraphic/img/sample1.jpg') }}"></a>
+			</div>
+			<div class="carousel-feature">
+				<a href="#"><img class="carousel-image" alt="Image Caption" src="{{ asset('bundles/acmegraphic/img/sample2.jpg') }}"></a>
+			</div>
+			<div class="carousel-feature">
+				<a href="#"><img class="carousel-image" alt="Image Caption" src="{{ asset('bundles/acmegraphic/img/sample3.jpg') }}"></a>
+			</div>
+			<div class="carousel-feature">
+				<a href="#"><img class="carousel-image" alt="Image Caption" src="{{ asset('bundles/acmegraphic/img/sample4.jpg') }}"></a>
+			</div>
+		</div>
+		<div id="carousel-left"><img src="{{ asset('bundles/acmegraphic/img/arrow-left.png') }}" /></div>
+		<div id="carousel-right"><img src="{{ asset('bundles/acmegraphic/img/arrow-right.png') }}" /></div>
+	</div>
+{% endblock %}

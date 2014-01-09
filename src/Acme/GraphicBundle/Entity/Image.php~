@@ -1,0 +1,10 @@
+<?php
+namespace Acme\GraphicBundle\Entity;
+class Image {
+	protected $page;
+	protected $smallPath;
+	protected $bigPath;
+	protected $downloadPath;
+	protected $altText;
+	protected $description; 
+}

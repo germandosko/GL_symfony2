@@ -1,0 +1,7 @@
+parameters:
+#    acme_graphic.example.class: Acme\GraphicBundle\Example
+
+services:
+#    acme_graphic.example:
+#        class: %acme_graphic.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

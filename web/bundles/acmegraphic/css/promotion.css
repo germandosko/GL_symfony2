@@ -1,0 +1,78 @@
+@keyframes move
+{
+	0%		{transform: rotate(0deg);left:0px;}
+	25%		{transform: rotate(20deg);left:0px;}
+	50%		{transform: rotate(0deg);left:800px;}
+	70%		{transform: rotate(0deg);left:800px;background:#1ec7e6;}
+	100%	{transform: rotate(-360deg);left:0px;}
+}
+
+@-moz-keyframes move /* Firefox */
+{
+	0%		{-moz-transform: rotate(0deg);left:0px;}
+	25%		{-moz-transform: rotate(20deg);left:0px;}
+	50%		{-moz-transform: rotate(0deg);left:800px;}
+	70%		{-moz-transform: rotate(0deg);left:800px;background:#1ec7e6;}
+	100%	{-moz-transform: rotate(-360deg);left:0px;}
+}
+
+@-webkit-keyframes move /* Safari and Chrome */
+{
+	0%		{-webkit-transform: rotate(0deg);left:0px;}
+	25%		{-webkit-transform: rotate(20deg);left:0px;}
+	50%		{-webkit-transform: rotate(0deg);left:300px;}
+	70%		{-webkit-transform: rotate(0deg);left:-300px;background:#1ec7e6;}
+	100%		{-webkit-transform: rotate(-360deg);left:0px;}
+}
+
+@-o-keyframes move /* Opera */
+{
+	0%		{-o-transform: rotate(0deg);left:0px;}
+	25%		{-o-transform: rotate(20deg);left:0px;}
+	50%		{-o-transform: rotate(0deg);left:800px;}
+	70%		{-o-transform: rotate(0deg);left:800px;background:#1ec7e6;}
+	100%	{-o-transform: rotate(-360deg);left:0px;}
+}
+
+@keyframes rotate
+{
+	0%   {transform: rotateY(360deg)}
+}
+
+@-moz-keyframes rotate /* Firefox */
+{
+	0%   {-moz-transform: rotateY(360deg)}
+}
+
+@-webkit-keyframes rotate /* Safari and Chrome */
+{
+	0%   {-webkit-transform: rotateY(360deg)}
+}
+
+@-o-keyframes rotate /* Opera */
+{
+	0%   {-o-transform: rotateY(360deg)}
+}
+#promotion_head{height:70px; width:100%; margin-bottom:20px;}
+	#promotion_move{position:relative; height:40px; width:350px; background-color: #0489B1; box-shadow: -5px -5px 2px #fff; font-family: 'Bowlby One SC'; text-align:center; padding-top:10px; margin: 0px auto 0px auto; font-size:30px; border-radius:15px; color:#fff; z-index:100; letter-spacing:2px;
+		animation: move 5s linear 0s 1 ease-out;
+		/* Firefox: */
+		-moz-animation: move 5s 1;
+		/* Safari and Chrome: */
+		-webkit-animation: move 5s 1;
+		/* Opera: */
+		-o-animation: move 5s linear 1;
+	}
+		#promotion_move span{text-shadow: 3px 3px 5px #000;}
+#promotion{position:relative; float:left; width:430px; min-height:230px; margin:0px 0px 20px 20px; padding:20px; background-color:#fff; border-radius:25px; background: -webkit-linear-gradient(black, white); background: -moz-linear-gradient(black, white); background: -o-linear-gradient(black, white);  box-shadow: -5px -5px 2px #fff;}
+	#promotion h1{font-family: 'Snowburst One', cursive; font-size:3em; padding-bottom:30px; color:#B18904; text-shadow: 3px 3px 5px #000;}
+	#promotion span{font-family: 'Rum Raisin', cursive; font-size:1.5em; padding-bottom:5px; text-shadow: 0px 0px 5px #fff,2px 2px 2px #fff;,3px 3px 3px #fff;}
+	#price{position:absolute; top:180px; left:300px; width:150px; height:50px; padding-top:20px; background-color:#B18904; color:#fff; border-radius:25px; text-align:center; font-size:30px; font-family: 'Bowlby One SC'; box-shadow: 10px 10px 5px #888888; letter-spacing:3px;
+		animation: rotate 3s ease none 1 alternate;
+		/* Firefox: */
+		-moz-animation: rotate 3s ease none 1 alternate;
+		/* Safari and Chrome: */
+		-webkit-animation: rotate 3s ease none 1 alternate;
+		/* Opera: */
+		-o-animation: rotate 3s ease none 1 alternate;
+	}

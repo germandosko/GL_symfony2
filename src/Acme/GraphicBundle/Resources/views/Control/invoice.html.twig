@@ -1,0 +1,25 @@
+{% extends "::base.html.twig" %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('bundles/acmegraphic/css/invoice.css') }}" type="text/css">	
+{% endblock stylesheets%}
+{% block change %}
+	<div id='invoice'>
+		<div id='invoice_left'>
+			<span class='titles'>TITLE</span><br/>
+			<span class='text'>All necessary information</span><br/><br/>	
+			<span class='titles'>TITLE</span><br/>
+			<span class='text'>All necessary information</span><br/><br/>
+			<span class='titles'>TITLE</span><br/>
+			<span class='text'>All necessary information</span><br/><br/>
+		</div>
+		<div id='invoice_right'>
+			<p>FORMULARIO SOLICITUD</p>
+			<div id='line'></div>
+			<form action="{{ path('_invoice') }}" method="post" id="invoiceForm" {{ form_enctype(form) }}>
+				{{ form_widget(form) }}
+				<input type="submit" />
+			</form>
+		</div>	
+		<div class="clearfix"></div>
+	</div>
+{% endblock change %}

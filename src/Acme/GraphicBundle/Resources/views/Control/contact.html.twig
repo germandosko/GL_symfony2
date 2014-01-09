@@ -1,0 +1,31 @@
+{% extends "::base.html.twig" %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('bundles/acmegraphic/css/contact.css') }}" type="text/css">	
+{% endblock stylesheets%}
+{% block change %}
+			<div id="administration">
+				<a href="{{ path('_index') }}" title="back" id="back_inicio">
+					<img src="{{ asset('bundles/acmegraphic/img/back.png') }}" alt="Volver" />
+				</a>
+			</div>	
+			<div id='contact'>
+					<div id='contact_right'>
+						<h2>FORMULARIO CONTACTO</h2>
+						<div id='line'></div>
+						<form action="" method="post" id="contactForm">
+							<fieldset>
+								<label for="name" class="black">Nombre</label>
+								<input type="text" name="name" id="name" class="shadow" required/>
+								<label for="email" class="black">E-mail</label>
+								<input type="email" name="email" id="email" class="shadow" required/>
+								<label for="telephone" class="black">Tel&eacute;fono</label>
+								<input type="text" name="telephone" id="telephone" class="shadow" />
+								<label for="question" class="black">Consulta</label>
+								<textarea name="question" id="question" class="shadow" required></textarea>
+								<input type="submit" value="Enviar" />
+							</fieldset>							
+						</form>
+					</div>	
+					<div class="clearfix"></div>
+				</div>
+{% endblock change %}

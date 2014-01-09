@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Graphics{% endblock %}</title>
+        <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
+		<link rel="stylesheet" href="{{ asset('bundles/acmegraphic/css/reset.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/acmegraphic/css/style.css') }}" />
+    </head>
+    <body>
+        <header>
+			<ul>
+				<li><a href="{{ path('_welcome') }}">Home</a></li>
+				<li><a href="{{ path('_history') }}">History</a></li>				
+				<li><a href="">Customers</a></li>				
+				<li><a href="">Contact</a></li>				
+			</ul>
+		</header>		
+		<div id="wrapper">        
+			{% block content %}{% endblock %}
+		</div>
+		<footer>
+			<p>Informaci&oacute;n 1458 - Ciudad de Rosario - Provincia de Santa Fe</p>
+		</footer>
+    </body>
+</html>

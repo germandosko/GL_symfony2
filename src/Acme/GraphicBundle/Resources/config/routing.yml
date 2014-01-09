@@ -1,0 +1,27 @@
+_index:
+    pattern:  /index
+    defaults: { _controller: AcmeGraphicBundle:Control:index }
+
+_contact:
+    pattern:  /contact
+    defaults: { _controller: AcmeGraphicBundle:Control:contact}
+
+_promotion:
+    pattern:  /promotion
+    defaults: { _controller: AcmeGraphicBundle:Control:promotion}
+
+_baptism:
+    pattern:  /baptism
+    defaults: { _controller: AcmeGraphicBundle:Control:baptism}
+
+_communion:
+    pattern:  /communion
+    defaults: { _controller: AcmeGraphicBundle:Control:communion}
+
+_wedding:
+    pattern:  /wedding
+    defaults: { _controller: AcmeGraphicBundle:Control:wedding}
+
+_invoice:
+    pattern:  /invoice
+    defaults: { _controller: AcmeGraphicBundle:Control:invoice}

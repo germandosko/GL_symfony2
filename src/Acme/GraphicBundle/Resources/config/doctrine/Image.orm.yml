@@ -1,0 +1,27 @@
+Acme\GraphicBundle\Entity\Image:
+   type: entity
+   repositoryClass: Acme\GraphicBundle\Entity\ImageRepository   
+   table: images
+   id:
+     id:
+       type: integer
+       generator: { strategy: AUTO }
+   fields:
+     page:
+       type: string
+       length: 100
+     smallPath:
+       type: string
+       length: 100
+     bigPath:
+       type: string
+       length: 100
+     downloadPath:
+       type: string
+       length: 100
+     altText:
+       type: string
+       length: 100
+     description:
+       type: string
+       length: 100

@@ -1,0 +1,32 @@
+acme_graphic:
+    resource: "@AcmeGraphicBundle/Resources/config/routing.yml"
+    prefix:   /
+
+_contact:
+    pattern:  /contact
+    defaults: { _controller: AcmeGraphicBundle:Control:contact }
+
+_index:
+    pattern:  /index
+    defaults: { _controller: AcmeGraphicBundle:Control:index }
+
+#_welcome:
+#    pattern:  /home/{name}
+#    defaults: { _controller: AcmeGraphicBundle:Welcome:index, name: peter }
+
+#_history:
+#    pattern:  /history
+#    defaults: { _controller: AcmeGraphicBundle:Welcome:history }
+
+#_bienvenida:
+#    pattern:  /
+#    defaults: { _controller: AcmeGraphicBundle:Welcome:bienvenida }
+
+# Internal routing configuration to handle ESI
+# ****** WARNING ******
+# This route should be enabled with caution as it can open a security vulnerability
+# see http://symfony.com/blog/security-release-symfony-2-0-20-and-2-1-5-released for more information
+# ****** WARNING ******
+#_internal:
+#    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#    prefix:   /_internal

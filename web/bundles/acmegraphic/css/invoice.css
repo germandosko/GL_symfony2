@@ -1,0 +1,8 @@
+#invoice{color:#B18904; font-family: 'Patrick Hand SC'; min-height:500px; }
+	#invoice_left {width:450px; min-height:500px; float:left; padding:25px;}
+		#invoice_left span.titles{font-size:1.7em;}
+		#invoice_left span.text{font-size:1.3em;}
+	#invoice_right {width:450px; min-height:500px; float:left; padding:25px;}
+		#invoice_right p{display:block; font-size:1.5em; margin:0px 0px 5px 49px; font-weight:bold;}
+		#line {width:350px; height:1px; margin:0px auto 0px auto; background-color:#B18904;}
+	#invoiceForm {font-size:1.3em; font-weight:normal;}

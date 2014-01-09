@@ -1,0 +1,18 @@
+#presentation{width:1000px; height:150px;}
+	#roundLogo{width:150px; height:150px; float: left; background-image:url(../img/logo.png); margin:3px 0px 0px 80px;}
+	#imagen_presentacion{position: absolute; width:572px; height:117px; float:left; background-image:url(../img/imgPresentacion.png); margin:20px 0px 0px 330px;}
+		#imagen_1{ width:136px; height:105px; float:left; background-image:url("../img/bg_imagen1.jpg"); margin-left:10px; margin-top:5px;}
+		#imagen_2{ width:136px; height:105px; float:left; background-image:url("../img/bg_imagen2.jpg"); margin-top:9px;}
+		#imagen_3{ width:136px; height:103px; float:left; background-image:url("../img/bg_imagen3.jpg"); margin-top:9px;}
+		#marca_1{ width:130px; height:23px; float:left; background-image:url("../img/bg_marca1.jpg");margin-top:3px;}
+		#marca_2{ width:130px; height:23px; float:left; background-image:url("../img/bg_marca2.jpg");margin-top:3px;}
+		#marca_3{ width:130px; height:59px; float:left; background-image:url("../img/bg_marca3.jpg");margin-top:3px;}
+p {color:#B18904; font-family: 'Patrick Hand SC';}
+	p.titles{font-size:3em; margin-bottom:10px; text-align:center; color:#fff}
+	p.text{font-size:1.5em;}
+#options {position: relative; width:1000px; height:200px; background-color:#111; margin-top:20px;}
+	#line {width:1000px; height:5px; background-color: #fff;}
+	#effect1 {position:relative; width:250px; background-color:#222; display:block; float:left; margin-left:60px; height: 50px; border-bottom-left-radius:1em; border-bottom-right-radius:1em;}
+	#effect2 {position:relative; width:250px; background-color:#222; display:block; float:left; margin-left:60px; height: 50px; border-bottom-left-radius:1em; border-bottom-right-radius:1em;}
+	#effect3 {position:relative; width:250px; background-color:#222; display:block; float:left; margin-left:60px; height: 50px; border-bottom-left-radius:1em; border-bottom-right-radius:1em;}
+	
